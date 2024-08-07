@@ -18,11 +18,9 @@ namespace Week4Practice5
 
         public int StudentNumber { get; set; }                                     //Student a ait property
 
-        public void StudentInfo()           //Öğrenci bilgilerini veren metot
+        public override void InfoPerson()                   //Base sınıftaki ınfo metodu burada override edilerek tekrar kullanıldı
         {
-            
-            InfoPerson();           //Base sınıfta yazdığımız bilgi metodunu burda kullandık
-            Console.WriteLine("Öğrencinin numarası : " + StudentNumber);
+            Console.WriteLine("Öğrencinin adı : " + FirstName + "Soyadı : " + LastName + " Numarası : " + StudentNumber);
         }
     }
 

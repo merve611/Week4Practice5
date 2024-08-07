@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,13 +19,14 @@ namespace Week4Practice5
             }
         }
         public double Salary { get; set; }
-
-        public void TeacherInfo()           //Öğretmen bilgilerini veren metot
+       
+        public override void InfoPerson()                   //Base sınıftaki ınfo metodu burada override edilerek tekrar kullanıldı
         {
-            
-            InfoPerson();                   //Base sınıfta yazdığımız bilgi metodunu burda kullandık
-            Console.WriteLine("Öğretmenin maaşı : " + Salary);
-
+            Console.WriteLine("Öğretmenin adı : " + FirstName + "Soyadı : " + LastName + " Maaşı : " + Salary);
         }
+
+
+
     }
+
 }

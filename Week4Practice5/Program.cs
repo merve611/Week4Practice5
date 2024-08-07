@@ -4,10 +4,10 @@ internal class Program
 {
     public static void Main(string[] args)
     {
-        Teacher teacher = new Teacher("Merve", "Çakıroğlu", 85000);
-        teacher.TeacherInfo();
+        BasePerson teacher = new Teacher("Merve", "Çakıroğlu", 85000);
+        teacher.InfoPerson();
 
-        Student student = new Student("Emirhan", "Akkoyunlu", 150757026);
-        student.StudentInfo();
+        BasePerson student = new Student("Emirhan", "Akkoyunlu", 150757026);
+        student.InfoPerson();
     }
 }
